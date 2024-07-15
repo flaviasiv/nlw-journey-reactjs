@@ -31,7 +31,7 @@ export function ConfirmTripModal({
             </p>
           </div>
           
-          <form className="space-y-3">
+          <form onSubmit={createTrip} className="space-y-3">
             <div className="h-14 px-4 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center gap-2">
               <User className="text-zinc-400 size-5" />
               <input
@@ -52,7 +52,7 @@ export function ConfirmTripModal({
                 onChange={event => setOwnerEmail(event.target.value)}
               />
             </div>
-            <Button onClick={createTrip} type="submit" size="full">
+            <Button type="submit" size="full">
               Confirmar criação da viagem
               <Plus className="size-5" /> 
             </Button>
