@@ -21,7 +21,8 @@ export function CreateTripPage() {
 
   const [emailsToInvite, setEmailsToInvite] = useState([
     'diego@rocketseat.com.br',
-    'john@acme.com'
+    'john@acme.com',
+    'fulano@fulano.com'
   ])
 
   function openGuestsInput() {
